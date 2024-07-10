@@ -1,0 +1,507 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #ededed;
+}
+
+*{
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+
+}
+
+
+nav{
+    width: 100%;
+    background-color: white;
+    /* padding: 10px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1px solid #D2D5D7;
+}
+
+.header_logo{
+    width: 90px;
+    padding: 10px;
+}
+
+.header_content{
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.main_profile_list{
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search{
+    width: 70%;
+    /* background-color: chartreuse; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.search input{
+    width: 85%;
+    outline: none;
+    border: .1px solid #D2D5D7;
+    padding:14px 40px;
+    border-radius: 25px;
+    
+}
+
+.search button{
+    position: absolute;
+    right: 0px;
+    padding: 9px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.profile_list{
+    display: flex;
+    align-items: center;
+}
+
+.profile_list img{
+    width: 15px;
+}
+
+
+.profile_img{
+    width: 30px !important;
+}
+
+.notification img{
+    width: 25px !important;
+    border: .1px solid #D2D5D7;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.main_profile_list {
+    width: 25% !important;
+}
+
+.profile_list{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid #D2D5D7;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+#small_main_list {
+    width: 200px;
+    /* height: 300px; */
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: .1px solid #D2D5D7;
+    top: 60px;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 10px;
+    /* height: 0px; */
+    direction: rtl !important;
+    transition: .25s;
+    left: 20px;
+    box-shadow: 0px 0px 2px .5px gray;
+}
+
+#small_main_list li {
+    direction: rtl !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#small_main_list a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+#small_main_list li img {
+    width: 25px;
+    /* height: 25px; */
+    margin: 0px 10px;
+}
+
+#small_main_list li p {
+    font-size: large;
+}
+
+
+.page_title{
+    padding: 0px 80px;
+}
+
+.completed_notCompleted_Btn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* padding: 0 80px; */
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+
+.completed_notCompleted_Btn button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    
+}
+
+
+.btnChecked{
+    border:.1px solid #0778B5 !important;
+    color: #0778B5;
+    background-color: #E6F2F8;
+}
+
+
+.not_completed_corses{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.completed_courses{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course_card{
+    width: 300px;
+    background-color: white;
+    margin:20px auto;
+    border: .1px solid #D2D5D7;
+    padding:40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 24px -2px rgb(198, 198, 198);
+    cursor: pointer;
+    transition: .75s;
+    /* margin: 20px; */
+    
+}
+
+.course_card:hover{
+    scale: 1.1;
+    box-shadow: 0 2px 24px -2px rgb(127, 126, 126);
+
+}
+
+.course_card img{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.course_card h2{
+    text-align: center;
+}
+
+.course_card p{
+ height: 50px;
+}
+
+.lessons{
+    width:35%;
+    display: flex;
+    align-items: center;
+
+}
+
+.lessons p{
+    height: unset !important;
+    margin:0 10px ;
+}
+
+.course_card h3{
+    float: left;
+   }
+
+.lessons img{
+    width: 20px;
+    display: block;
+}
+
+.course_card progress{
+    width: 80%;
+    height: 10px;
+    border: .1px solid black;
+    background-color: #c3c9cc !important;
+}
+
+.add_new_courses img{
+    width: 25px;
+    /* margin: 0px 20px; */
+    cursor: pointer;
+}
+
+
+.popup_add_new_courses_continer{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    /* background-color: red; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_add_new_courses_closer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.379);
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.popup_add_new_courses{
+    width: 50%;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    /* z-index: 1; */
+    text-align: center;
+}
+
+#img_close{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+.close_popup_add{
+    background-color: #e8e8e8;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+.popup_add_new_courses input{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: .1px solid #c3c9cc;
+    outline: none;
+    direction: ltr !important;
+    font-size: large;
+    border-radius: 5px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+#add_courses{
+    display: block;
+    margin:20px auto;
+    width: 50%;
+    padding: 15px 0;
+    border: none;
+    background-color: #0778B5;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+    --percentage: var(--value);
+    --primary: #369;
+    --secondary: #adf;
+    --size: 50px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+  }
+  
+  [role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+  }
+  
+.show_videos{
+    width: 80%;
+    background-color: #0778B5;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin:  auto;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+    transition: .5s;
+}
+  
+.show_videos:hover{
+    background-color: #16a3ef;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+    .search{
+        display: none;
+    }
+
+    .header_content {
+        width: 30%;
+    }
+
+    .main_profile_list {
+        width: 84% !important;
+    }
+}
+
+
+@media (max-width: 900px){
+    .course_card{
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 620px){
+    .main_profile_list {
+        width: 100% !important;
+    }
+
+    .header_content {
+        width: 45%;
+    }
+
+    .course_card{
+        width: 350px;
+    }
+}
+
+
+
+
+@media (max-width: 400px){
+    .completed_notCompleted_Btn button{
+        padding: 15px 10px;
+    }
+
+    .course_card {
+        width: 320px;
+    }
+
+    .popup_add_new_courses{
+        width: 80%;
+    }
+
+    .popup_add_new_courses h2{
+        font-size: larger;
+    }
+
+    #img_close{
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup_add_new_courses input{
+        width: 80%;
+        padding: 10px;
+    }
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farid | profile</title>
+    <link rel="icon" href="../img/Company logo.png">
+</head>
+<body>
+    <link rel="stylesheet" href="../profile/style.css">
+
+    <nav>
+        <img src="../img/image 1.png" alt="" class="header_logo">
+        <span class="header_content">
+            <span class="search">
+                <input type="search" placeholder="البحث">
+                <button><img src="../img/search-normal.png" alt=""></button>
+            </span>
+            <span class="main_profile_list">
+                <span class="notification">
+                    <img src="../img/notification-bing.png" alt="">
+                </span>
+
+
+                <span class="profile_list" onclick="openList()" id="nav">
+                    <img src="../img/Group 17.png" alt="" class="profile_img">
+                <img src="../img/Vector 175.png" alt="">
+                <ul id="small_main_list">
+                    <a href="../course details/index.html">
+                        <li>
+                            <img src="../img/star.png" alt="">
+                            <p>تفاصيل الكوررس</p>
+                        </li>
+                    </a>
+                    <a href="../my courses/index.html">
+                        <li>
+                            <img src="../img/book.png" alt="">
+                            <p>كورساتي</p>
+                        </li>
+                    </a>
+                    
+                    <a href="../profile/index.html">
+                        <li>
+                            <img src="../img/edit.png" alt="">
+                            <p>االملف الشخصي</p>
+                        </li>
+                    </a>
+                    
+                    <li  style="color: red;border-top: .1px solid #E9EAEB;" onclick="logOut()">
+                        <img src="../img/logout.png" alt="">
+                        <p>تسجيل الخروج</p>
+                    </li>
+                </ul>
+                </span>
+                
+
+            </span>
+        </span>
+    </nav>
+
+
+    <div class="profile_data">
+        <div class="student_data_card">
+            <img src="../img/user (1).png" alt="">
+            <h1 id="user_name">nanananan</h1>
+            <span class="student_data">
+                <span>
+                    <p>الجنس :</p>
+                    <b id="gender"></b>
+                </span>
+                <span>
+                    <p>تاريخ الانضمام :</p>
+                    <b id="JoinDate"></b>
+                </span>
+
+
+            </span>
+        </div>
+        <div class="more_student_data">
+            <div class="education">
+                <h2>التعليم</h2>
+                <h3>مستواك الاكاديمي الحالي</h3>
+                <span class="education_level">
+                    <span>
+                        <input type="radio" name="edu_level" class="edu_level" value="المرحلة الجامعية/ البكالوريوس" disabled>
+                        <p>المرحلة الجامعية/ البكالوريوس</p>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="edu_level" class="edu_level" value="في المدرسة الثانوية" disabled>
+                        <p>في المدرسة الثانوية</p>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="edu_level" class="edu_level" value="انا موظف" disabled>
+                        <p>انا موظف</p>
+                    </span>
+
+                </span>
+                <div class="edu_date">
+     <span>
+        <p>سنة البدء</p>
+        <input type="text" id="startDAte" disabled>
+     </span>
+    
+     <span>
+        <p>النهاية</p>
+        <input type="text" id="endDate" disabled>
+     </span>
+                </div>
+            </div>
+
+            <div class="password_settings">
+                <h2>اعدادات كلمة المرور</h2>
+                <div class="new_password">
+                    <span>
+                        <p>كلمة المرور الحالية</p>
+                        <input type="text">
+                    </span>
+                    <span>
+                        <p>كلمة المرور الجديدة</p>
+                        <input type="text">
+                    </span>
+                    <span>
+                        <p>اعد ادخال كلمة المرور</p>
+                        <input type="text">
+                    </span>
+                </div>
+            </div>
+
+            <div class="delete_account">
+                <h2>حذف الحساب</h2>
+                <p>إذا قمت بحذف حسابك، فسيتم مسح معلوماتك الشخصية من فريد، وسيتم إخفاء هوية جميع أنشطة الدورة التدريبية الخاصة بك. لا يمكن التراجع عن هذا الإجراء!</p>
+                <button onclick="openPopUp()">حذف الحساب</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup_delete_account_continer" id="popup_delete_account_continer">
+        <div class="popup_delete_account_closer" onclick="closePopup()"></div>
+        <div class="popup_delete_account">
+            <button class="close" onclick="closePopup()">
+                <img src="../img/remove.png" alt="">
+            </button>
+            <h3>هل انت متأكد من حذف الحساب؟</h3>
+            <p>لا يمكن التراجع عن هذا الإجراء!</p>
+            <span class="delete_account_Btn">
+                <button onclick="closePopup()">لا , تراجع</button>
+                <button id="delete" onclick="deleteAccount()">نعم , تأكيد</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="goToSignin_signUp" id="goToSignin_signUp">
+        <img src="../img/image 1.png" alt="">
+        <span class="signin_up_Btn">
+            
+          <a href="../index.html"><button class="signin">تسجيل الدخول </button></a>  
+          <a href="../sign up/index.html"><button  class="signup">انشاء حساب</button></a>
+            
+
+           <div class="nav_signInUp_list_div" onclick="openList()">
+            <img src="../img/Group 17.png" alt="" class="Navprofile_img">
+            <img src="../img/Vector 175.png" alt="">
+           </div>
+            
+
+        </span>
+    </div>
+    
+<script src="../profile/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+*{
+
+    font-family: "Tajawal", sans-serif;
+}
+
+
+
+.video_control_bar{
+    /* height: 50px; */
+    width: 100%;
+    background-color: #0778B5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.content_tabel{
+    width: 20%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.video_control_bar button{
+    display: flex;
+    /* width: 100px; */
+    align-items: center;
+    font-size: medium;
+    color: white;
+    padding: 0;
+    margin: auto;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+
+
+.video_control_bar button img{
+    width: 20px ;
+    height: 20px;
+    padding: 0;
+    margin: 0px 5px;
+}
+
+
+.next_prev_video{
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.next_prev_video button{
+    /* background-color: blueviolet; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* font-size: large; */
+    font-weight: bold;
+}
+
+
+#next{
+    background-color: white;
+    color: #0778B5;
+    
+}
+
+#prev{
+    border: .1px solid white;
+}
+
+.next_prev_video button p{
+    padding: 0;
+}
+
+.course_progress{
+    width: 15%;
+    /* background-color: red; */
+    text-align: center;
+    padding:  0;
+    color: white;
+}
+
+
+.course_progress p{
+    padding: 0;
+    margin: 0;
+}
+
+.course_progress span{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+@keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+    --percentage: var(--value);
+    --primary: white;
+    --secondary: black;
+    --size: 50px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin:0 auto;
+  }
+  
+  [role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+  }
+  
+
+  .videos_continer{
+    width: 95%;
+    /* background-color: red; */
+    margin:10px auto;
+    display: flex;
+    justify-content: space-between !important;
+
+  }
+
+  .tabel_of_content{
+    width: 25%;
+    /* height: 100%; */
+    /* background-color: #0778B5; */
+    display: none;
+    order: -1;
+    /* overflow-y: hidden; */
+  }
+
+  .video_to_show{
+    width: 70%;
+    display: block;
+    margin: auto;
+    transition: 1s;
+  }
+
+
+  .content_list{
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    /* background-color: red; */
+  }
+
+  .video_tab{
+    padding:20px 10px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: large;
+    border-radius: 15px;
+    /* color: #0778B5; */
+  }
+
+  .playing_video{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+  }
+
+  .video_tab:hover{
+    background-color: #0778B5;
+    color: white;
+  }
+
+  #course_name{
+    padding: 10px 0;
+  }
+
+  .videoBlaying{
+    background-color: #0778B5;
+    color: white;
+  }
+
+  #Video_name{
+    text-align: center;
+    color: #0778B5;
+  }
+
+
+
+
+
+
+
+  @media (max-width: 1300px){
+    .videos_continer{
+      /* display: unset; */
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .video_to_show{
+      width: 70%;
+      display: block;
+      margin: 0px 45px;
+      transition: 1s;
+    }
+
+    .tabel_of_content{
+      width: 40%;
+    }
+
+    .video_to_show{
+      width: 60%;
+
+    }
+
+    .content_tabel {
+      width: 30%;
+    }
+
+    .course_progress{
+      width: 30%;
+    }
+  }
+
+
+  @media (max-width: 1050px){
+    .tabel_of_content{
+      order: 1;
+      display: block;
+    margin: auto;
+    text-align: center;
+      
+    }
+
+    .videos_continer{
+      display: unset;
+    }
+
+    .video_to_show {
+      width: 90%;
+  }
+
+  
+
+
+  }
+
+
+
+  
+  @media (max-width: 800px){
+    .content_tabel {
+      width: 40%;
+    }
+
+    .video_to_show{
+      margin: auto;
+    }
+
+    .tabel_of_content{
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 600px){
+    .content_tabel {
+      width: 50%;
+    }
+
+    .course_progress{
+      width: 40%;
+    }
+  }
+
+
+  @media (max-width: 470px){
+    .video_control_bar{
+      display: block;
+    }
+
+    .content_tabel{
+      width: 95%;
+      justify-content: space-between;
+    }
+  }

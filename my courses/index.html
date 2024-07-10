@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Farid | my courses</title>
+    <link rel="icon" href="../img/Company logo.png">
+</head>
+<body>
+    <link rel="stylesheet" href="../my courses/style.css">
+
+    <nav>
+        <img src="../img/image 1.png" alt="" class="header_logo">
+        <span class="header_content">
+            <span class="search">
+                <input type="search" placeholder="البحث">
+                <button><img src="../img/search-normal.png" alt=""></button>
+            </span>
+            <span class="main_profile_list">
+
+                <span class="add_new_courses" onclick="addNewCourses()">
+                    <img src="../img/plus.png" alt="">
+                </span>
+
+
+                <span class="notification">
+                    <img src="../img/notification-bing.png" alt="">
+                </span>
+
+
+                <span class="profile_list" onclick="openList()" id="nav">
+                    <img src="../img/Group 17.png" alt="" class="profile_img">
+                <img src="../img/Vector 175.png" alt="">
+                <ul id="small_main_list">
+                    <a href="../course details/index.html">
+                        <li>
+                            <img src="../img/star.png" alt="">
+                            <p>تفاصيل الكوررس</p>
+                        </li>
+                    </a>
+                    <a href="../my courses/index.html">
+                        <li>
+                            <img src="../img/book.png" alt="">
+                            <p>كورساتي</p>
+                        </li>
+                    </a>
+                    
+                    <a href="../profile/index.html">
+                        <li>
+                            <img src="../img/edit.png" alt="">
+                            <p>االملف الشخصي</p>
+                        </li>
+                    </a>
+                    
+                    <li  style="color: red;border-top: .1px solid #E9EAEB;" onclick="logOut()">
+                        <img src="../img/logout.png" alt="">
+                        <p>تسجيل الخروج</p>
+                    </li>
+                </ul>
+                </span>
+                
+
+            </span>
+        </span>
+    </nav>
+
+    <h1 class="page_title">كورساتي</h1>
+
+    <span class="completed_notCompleted_Btn">
+        <button id="not_completed" class="btnChecked">قيد التنفيذ</button>
+        <button id="completed">الدورات المكتملة</button>
+
+
+    </span>
+
+    <div class="not_completed_corses" id="not_completed_corses">
+
+    </div>
+
+    <div class="completed_courses" id="completed_courses">
+
+    </div>
+
+
+    <div class="popup_add_new_courses_continer" id="popup_add_new_courses_continer">
+        <div class="popup_add_new_courses_closer" onclick="closeCodePopup()"></div>
+        <div class="popup_add_new_courses">
+            <button class="close_popup_add">
+                <img src="../img/remove.png" id="img_close" alt="" onclick="closeCodePopup()">
+            </button>
+             <h2>قم باستخدام كود الاشتراك الصحيح وابدء رحلتك في الوصول الي ماتريده</h2>
+             <p>فريد يسرّع عملية إندماج المتدرب الجديد للشركة بعشرات أضعاف 10X كفاءة طرق التدريب التقليدية</p>
+             <input type="number" id="corse_code">
+             <button id="add_courses" onclick="addCourse()">اضافة كورسات</button>
+        </div>
+    </div>
+
+
+
+    <script src="../my courses/index.js"></script>
+</body>
+</html>

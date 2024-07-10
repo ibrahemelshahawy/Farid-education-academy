@@ -1,0 +1,740 @@
+*{
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+
+}
+
+body{
+    background-color: rgb(208, 217, 217);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+
+.step1{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    transition: 2s !important;
+    /* display: none; */
+}
+
+
+
+.step1_content{
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+
+
+.progres{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.progres progress{
+    width: 95%;
+}
+
+.step1_content p{
+    margin: 0;
+    padding: 5px 0;
+}
+
+.step1_content h1{
+    margin-bottom: 0;
+}
+
+.name_inputs{
+    display: flex;
+    margin-top:25px ;
+    font-size: large;
+}
+
+.f-name{
+    width: 48%;
+    /* background-color: red; */
+    margin: auto;
+    padding: 10px 0;
+}
+
+.f-name input{
+    width: 95%;
+    padding: 10px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: .1px solid black;
+}
+
+.step_discreption{
+    width: 94%;
+    margin: auto;
+    display: block;
+    /* padding-bottom: 100PX; ; */
+    height: 390PX;
+}
+
+
+.prev_next_step{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.prev_next_step button{
+    display: flex;
+    font-size: medium;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 15px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.prev_next_step button img{
+    width: 25px;
+    margin: 0px 5px;
+}
+
+
+
+
+
+.prev_step{
+    background-color: #E6F2F8;
+    color: #0778B5;
+}
+
+.next_step{
+    background-color: #0778B5;
+    color: white ;
+}
+
+
+.step2{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left:200%;
+    transition: 2s;
+    position: absolute;
+}
+
+.step2_content{
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+
+.progres2{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.progres2 progress{
+    width: 95%;
+}
+
+.step_discreption{
+    width: 95%;
+}
+
+.student_edu_level{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student_level{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    border: .1px solid #E9EAEB;
+    padding: 10px 0px;
+    /* justify-content: space-between; */
+    border-radius: 5px;
+
+}
+
+.student_level input{
+    margin: 0px 20px;
+    width: 20px;
+    border: #E9EAEB    ;
+    height: 20px;
+}
+
+
+.step3{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left:200% ;
+    transition: 2s;
+}
+
+
+.edu_level{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.student_level3{
+    width: 45%;
+    display: flex;
+    border: .1px solid #b9bda6;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+.skip_step{
+    border: .1px solid #0778B5 !important;
+    color: #0778B5;
+    padding: 8px 15px !important;
+    background-color: white !important;
+}
+
+
+.step4{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left:  200%; ;
+    transition: 2s;
+}
+
+.edu_start{
+    width: 100%;
+}
+
+.edu_start input{
+    width: 95%;
+    padding: 10px 5px;
+    
+}
+
+.edu_end{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu_end h2{
+    width: 100%;
+}
+
+.edu_end input{
+    width: 95%;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.step5{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200%;
+    transition: 2s;
+}
+
+
+.student_gender_type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student_gender{
+    width: 45%;
+    display: flex;
+    font-size: large;
+    border: .1px solid #b9bda6;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.student_gender p{
+    margin:0 5px;
+}
+
+.student_gender input{
+    margin:0 10px ;
+}
+
+
+.step6{
+    width: 60%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200%;
+    transition: 2s;
+}
+
+.years_of_exp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.student_exp{
+    width: 48%;
+    padding: 15px 0;
+    border: .1px solid #b9bda6;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.student_exp input{
+    margin:0 10px;
+}
+
+
+
+.sign_up_form{
+    width: 50%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200%;
+    transition: 2s;
+    
+   
+}
+
+.form_content{
+    width: 100%;
+    background-color: white;
+}
+
+.logo{
+    padding: 20px;
+}
+
+.form_content h1{
+    margin: 0px 20px;
+}
+
+
+.form_content p{
+    margin: 0px 10px;
+}
+
+
+.email_password{
+    width: 100%;
+    margin: 20px 0;
+    display: block;
+}
+
+.email_password span{
+    display: block;
+    width: 90%;
+    margin:10px auto;
+}
+
+.email_password span input{
+    width: 95%;
+    border: .1px solid #b9bda6;
+    outline: none;
+    padding: 10px 5px;
+    margin: 15px 0;
+}
+
+#signUP_btn{
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: #0778B5;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sign_with_media{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign_with_media span{
+    border-bottom: 2px solid #b9bda6;
+    width: 25%;
+
+}
+
+
+.media_icon{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+
+.media_icon span{
+    background-color: #F2F2F3;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.media_icon img{
+    width: 30px;
+}
+
+.form_content p a{
+    color: #0778B5;
+    text-decoration: none;
+}
+
+.signin_link {
+    padding: 20px 0 !important;
+    margin: 10px 0;
+}
+
+
+.verification_code_form{
+    width: 30%;
+    background-color: #E6F2F8;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200%;
+    transition: 2s; 
+}
+
+.verification_code_form_content{
+    width: 100%;
+    background-color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.verification_code_form_content img{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.verification_code{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin:0px auto;
+    padding: 30px;
+    direction: ltr;
+
+}
+
+.verification_code input{
+    width: 5%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    border-radius: 5px;
+    border: .1px solid #b9bda6;
+}
+
+.verification_code input::-webkit-outer-spin-button,
+.verification_code input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#verify_otp{
+    display: block;
+    width: 80%;
+    margin:10px auto;
+    padding: 8px 0px;
+    background-color: #2b9bd8;
+    border-radius: 5px;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#resend{
+    color: #0778B5;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+@media  (max-width: 1350px){
+    .prev_next_step span{
+        width: 25% !important;
+    }
+}
+
+
+
+
+@media (max-width: 1125px){
+    .step1{
+        width: 80%;
+    }
+
+    .step2{
+        width: 80%;
+    }
+
+    .step3{
+        width: 80%;
+    }
+
+    .step4{
+        width: 80%;
+    }
+
+    .step5{
+        width: 80%;
+    }
+
+    .step6{
+        width: 80%;
+    }
+
+    .sign_up_form{
+        width: 90%;
+    }
+
+    .verification_code_form{
+        width: 60%;
+    }
+
+    .verification_code{
+        padding: unset;
+    }
+
+    .edu_level {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .prev_next_step {
+        width: 95%;
+        margin: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .prev_next_step span{
+        width: 25%;
+    }
+}
+
+
+
+@media (max-width: 890px){
+
+    .prev_next_step span {
+        width: 30% !important;
+    }
+
+}
+
+
+@media (max-width: 800px){
+
+    .step1 {
+        width: 90%;
+    }
+
+
+    .step2 {
+        width: 90%;
+    }
+
+    .step3 {
+        width: 90%;
+    }
+
+    .step4 {
+        width: 90%;
+    }
+
+    .step5 {
+        width: 90%;
+    }
+
+    .step6 {
+        width: 90%;
+    }
+
+
+    .prev_next_step span {
+        width: 30% !important;
+    }
+
+}
+
+
+@media (max-width: 650px){
+    .prev_next_step span{
+        width: 35% !important;
+    }
+
+    .student_level3{
+        font-size: small;
+        align-items: center;
+        display: flex;
+    }
+}
+
+
+
+@media (max-width: 550px){
+    .prev_next_step span{
+        width: 45% !important;
+    }
+
+    .step_discreption h1{
+        font-size: x-large;
+    }
+
+    .step_discreption h2{
+        font-size: large;
+    }
+
+    .student_exp{
+        font-size: small;
+    }
+
+    .student_gender_type{
+        display: block;
+    }
+
+    .student_gender{
+        width: 98%;
+        margin: 10px 0;
+    }
+
+    .student_gender input {
+        margin: 0 10px;
+        width: 15px;
+    }
+
+    .verification_code_form{
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width: 425px){
+    .prev_next_step span{
+        width: 60% !important;
+    }
+
+    .name_inputs{
+        display: block;
+    }
+
+    .student_edu_level {
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .student_level{
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .sign_with_media p{
+        font-size: small;
+    }
+   
+
+    .f-name {
+        width: 95%;
+        /* background-color: red; */
+        margin: auto;
+        padding: 10px 0;
+    }
+
+
+    .sign_up_form{
+        margin-left: 350%;
+    }
+
+    .step_discreption h1{
+        font-size: x-large;
+    }
+
+}
+
+@media (max-width: 350px){
+    .step_discreption h1{
+        font-size: large;
+    }
+
+    .edu_level{
+        width: 100%;
+    }
+
+    .student_exp{
+        font-size: x-small;
+        font-weight: bold;
+    }
+}

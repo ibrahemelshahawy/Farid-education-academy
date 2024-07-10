@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Farid | course Videos</title>
+    <link rel="icon" href="../img/Company logo.png">
+</head>
+<body>
+    <link rel="stylesheet" href="../course videos/style.css">
+    <link rel="stylesheet" href="../course details/style.css">
+
+
+    <nav>
+        <span class="free_exp">
+            <img src="../img/image 1.png" alt="">
+        
+        
+        <span class="profile" onclick="openList()">
+            <img src="../img/Group 17.png" alt="">
+            <img src="../img/direction-down 01.png" alt="" class="downArrow">
+            <ul id="small_main_list">
+                <a href="../course details/index.html">
+                    <li>
+                        <img src="../img/star.png" alt="">
+                        <p>تفاصيل الكورسات</p>
+                    </li>
+                </a>
+                <a href="../my courses/index.html">
+                    <li>
+                        <img src="../img/book.png" alt="">
+                        <p>كورساتي</p>
+                    </li>
+                </a>
+                
+                <a href="../profile/index.html">
+                    <li>
+                        <img src="../img/edit.png" alt="">
+                        <p>االملف الشخصي</p>
+                    </li>
+                </a>
+                
+                <li  style="color: red;border-top: .1px solid #E9EAEB;" onclick="logOut()">
+                    <img src="../img/logout.png" alt="">
+                    <p>تسجيل الخروج</p>
+                </li>
+            </ul>
+        </span>
+        </span>
+        
+            
+        </span>
+
+        <div class="video_control_bar">
+            <span class="content_tabel">
+            <button onclick="openTapelOfContent()">
+                <img src="../img/cells.png" alt="">
+                <p>جدول المحتوى</p>
+            </button>
+
+            <button>
+                <img src="../img/idea.png" alt="">
+                <p>الامتحانات</p>
+            </button>
+        </span>
+
+
+     
+
+        <span class="course_progress">
+           <p id="course_name">cmdcmmcm</p>
+           <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 50"></div>
+           <span>
+            <p>ماتم تحقيقه</p>
+
+            <p>50%</p>
+           </span>
+        </span>
+
+
+        </div>
+
+
+        <div class="videos_continer">
+            <span class="video_to_show" id="video_to_show">
+                <h1 id="Video_name">test</h1>
+            </span>
+            <span class="tabel_of_content" id="tabel_of_content"></span>
+            
+
+        </div>
+    
+
+
+        <script src="../course videos/index.js"></script>
+</body>
+</html>

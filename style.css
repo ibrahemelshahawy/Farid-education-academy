@@ -1,0 +1,241 @@
+.tajawal-extralight {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .tajawal-light {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .tajawal-regular {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tajawal-medium {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .tajawal-bold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tajawal-extrabold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .tajawal-black {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(208, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    width: 100%;
+    /* background-image: url("../img/—Pngtree—online\ tutorials\ concept\ women\ use_1607615.jpg"); */
+    background-position: center;
+    background-size: cover;
+}
+
+*{
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+
+}
+
+.signIn_form_continer{
+    padding: 7px;
+    /* background-color: #0778B5; */
+    background-color: rgb(208, 217, 217);
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.389);
+}
+
+
+.signIn_form{
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.signIn_form span p{
+    padding: 0;
+    margin: 0;
+}
+
+.signIn_form span h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+.email_input{
+    width: 400px;
+    margin: 20px 0;
+}
+
+.email_input p{
+    font-weight: bold;
+}
+
+.email_input input{
+    width: 95%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: .1px solid #D2D5D7;
+    direction: ltr;
+}
+
+
+.signIn_form button{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: none;
+    background-color: #0778B5;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.signIn_form button:hover{
+    background-color: #2d9fdd;
+}
+
+.more_options_bar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: large;
+    font-weight: bold;
+}
+
+.more_options_bar span{
+    width: 40%;
+    border-bottom: 2px solid #D2D5D7;
+    margin: auto;
+}
+
+.signIn_options{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+}
+ 
+.signIn_options span img{
+    width: 30px;
+    padding: 5px;
+}
+
+.signIn_options span {
+    border-radius: 5px;
+    padding:10px 30px;
+    background-color: #D2D5D7;
+    cursor: pointer;
+
+}
+
+.go_to_sign_up{
+    font-size: large;
+    padding: 10px 0;
+}
+
+.go_to_sign_up a{
+    text-decoration: none;
+    color: #0778B5;
+}
+
+
+
+
+
+@media (max-width: 500px){
+    .signIn_form_continer{
+        width: 80%;
+    }
+
+    .email_input input {
+        width: 85%;
+        display: block;
+        margin: auto;
+    }
+
+    .email_input {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .signIn_form button{
+        width: 80%;
+    }
+
+    .signIn_options{
+        width: 80%;
+    }
+
+    .signIn_options span{
+        padding: 8px 15px;
+    }
+
+    .go_to_sign_up{
+        padding: 0;
+        font-size: unset;
+    }
+
+}
+
+
+@media (max-width: 390px){
+    .signIn_options {
+        width: 90%;
+    }
+
+    .signIn_options span {
+        padding: 3px 10px;
+    }
+    .signIn_form_continer {
+        width: 90%;
+    }
+}

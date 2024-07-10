@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Farid | sign up</title>
+    <link rel="icon" href="../img/image 1.png">
+</head>
+<body>
+    <link rel="stylesheet" href="../sign up/style.css">
+
+    <div class="step1" id="step1">
+        <div class="step1_content">
+            <span class="progres"><progress id="file" value="14" max="100"> 14% </progress> <p>1/6</p></span>
+            <span class="step_discreption">
+                <h1>البيانات الشخصية</h1>
+                <p>نحن بحاجة لمعرفة اسمك</p>
+                <span class="name_inputs">
+                    <div class="f-name">
+                        <p>الاسم الأول</p>
+                        <input type="text" id="f_name" autocomplete="off">
+                    </div>
+                    <div class="f-name">
+                        <p>الاسم الثاني</p>
+                        <input type="text" id="s_name" autocomplete="off">
+                    </div>
+    
+                </span>
+            </span>
+            <span class="prev_next_step">
+                <button id="prev_step" class="prev_step" disabled><img src="../img/right-arrow.png" alt="">السابق</button>
+                <button id="next_step" class="next_step" onclick="goToStep2()">التالي<img src="../img/back.png" alt=""></button>
+            </span>
+           
+        </div>
+    </div>
+
+
+    <div class="step2" id="step2">
+        <div class="step2_content">
+            <span class="progres"><progress id="file" value="28" max="100"> 28% </progress> <p>2/6</p></span>
+            <span class="step_discreption">
+                <h1>ما هو افضل وصف لك حالياً</h1>
+                <p>نحن بحاجة لمعرفة ما هو مستواك الاكاديمي</p>
+                <span class="student_edu_level">
+                    <span class="student_level">
+                        <input type="radio" name="student_level1" class="job_title" value="في المدرسة الثانوية" id="high_school">
+                        <p>في المدرسة الثانوية</p>
+                    </span>
+                    <span class="student_level">
+                        <input type="radio" name="student_level1" class="job_title" value="في الجامعة/ الكلية" id="College_student">
+                        <p>في الجامعة/ الكلية</p>
+                    </span>
+                    <span class="student_level">
+                        <input type="radio" name="student_level1" class="job_title" value="انا موظف" id="employee">
+                       <p>انا موظف</p>
+                    </span>
+                </span>
+            </span>
+            <span class="prev_next_step">
+                <button id="prev_step2" class="prev_step" onclick="backToStep1()"><img src="../img/right-arrow.png" alt="">السابق</button>
+                <button id="next_step2" class="next_step" onclick="goToStep3()">التالي<img src="../img/back.png" alt=""></button>
+            </span>
+        </div>
+    </div>
+    
+    <div class="step3" id="step3">
+        <div class="step2_content">
+            <span class="progres"><progress id="file" value="42" max="100"> 42% </progress> <p>3/6</p></span>
+            <span class="step_discreption">
+                <h1>ما هو افضل وصف لك حالياً</h1>
+                <p>نحن بحاجة لمعرفة ما هو مستواك الاكاديمي</p>
+                <span class="edu_level">
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="Formal_education" value="لا يوجد تعليم رسمي"> 
+                        <p>لا يوجد تعليم رسمي</p>
+                    </span>
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="high_school_edu" value="التعليم الثانوي">
+                        <p>التعليم الثانوي</p>
+                    </span>
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="Diploma" value="شهادة دبلوم">
+                        <p>شهادة دبلوم</p>
+                    </span>
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="Undergraduate" value="المرحلة الجامعية/ البكالوريوس">
+                        <p>المرحلة الجامعية/ البكالوريوس</p>
+                    </span>
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="Masters" value="الماجستير">
+                        <p>الماجستير</p>
+                    </span>
+                    <span class="student_level3">
+                        <input type="radio" name="student_level" id="Ph_D" value="الدكتوراه">
+                        <p>الدكتوراه</p>
+                    </span>
+                </span>
+            </span>
+            <span class="prev_next_step">
+                <button id="prev_step3" class="prev_step" onclick="backToStep2()"><img src="../img/right-arrow.png" alt="">السابق</button>
+                <span style="display: flex; width: 20%; justify-content: space-between;">
+                    <button id="skip_step3" class="skip_step" onclick="SkipToStep4()">تخطي</button>
+                    <button id="next_step3" class="next_step" onclick="goToStep4()">التالي<img src="../img/back.png" alt=""></button>
+                </span>
+                
+            </span>
+        </div>
+    </div>
+
+    <div class="step4" id="step4">
+        <div class="step2_content">
+            <span class="progres"><progress id="file" value="56" max="100"> 56% </progress> <p>4/6</p></span>
+            <span class="step_discreption">
+                <span class="edu_start">
+                    <h2>في أي عام بدأت دراستك الحالية أو الأحدث</h2>
+                    <input type="date" id="start_date">
+                </span>
+                <h2>في أي عام انهيت دراستك أو تتوقع ان تنهي دراستك الحالية؟</h2>
+                <span class="edu_end" >
+                    <input type="date" id="end_date">
+                </span>
+                
+                
+                
+                </span>
+            
+            <span class="prev_next_step">
+                <button class="prev_step" onclick="backToStep3()"><img src="../img/right-arrow.png" alt="">السابق</button>
+                <span style="display: flex; width: 20%; justify-content: space-between;">
+                    <button id="skip_step3" class="skip_step" onclick="skipToStep5()">تخطي</button>
+                    <button id="next_step3" class="next_step" onclick="goToStep5()">التالي<img src="../img/back.png" alt=""></button>
+                </span>
+                
+            </span>
+        </div>
+    </div>
+
+
+    <div class="step5" id="step5">
+        <div class="step2_content">
+            <span class="progres"><progress id="file" value="70" max="100"> 56% </progress> <p>5/6</p></span>
+            <span class="step_discreption">
+                <h2>ما هو الجنس الذي تنتمي أليه</h2>
+                <span class="student_gender_type">
+                    <span class="student_gender">
+                        <input type="radio" name="student_gender" class="student_gender" value="انثي" id="female">
+                        <p>انثي</p>
+                    </span>
+                    <span class="student_gender">
+                        <input type="radio" name="student_gender" class="student_gender" value="ذكر" id="male">
+                        <p>ذكر</p>
+                    </span>
+                    
+                </span>
+                    
+                </span>
+          
+
+            <span class="prev_next_step">
+                <button  class="prev_step" onclick="backToStep4()"><img src="../img/right-arrow.png" alt="">السابق</button>
+                
+                  
+                    <button id="next_step3" class="next_step" onclick="goToStep6()">التالي<img src="../img/back.png" alt=""></button>
+                
+                
+            </span>
+        </div>
+    </div>
+
+
+    <div class="step6" id="step6">
+        <div class="step2_content">
+            <span class="progres"><progress id="file" value="100" max="100"> 100% </progress> <p>6/6</p></span>
+            <span class="step_discreption">
+               <h1>كم سنة من الخبرة في العمل بدوام كامل لديك؟</h1>
+             <span class="years_of_exp">
+                <span class="student_exp">
+                    <input type="radio" name="student_exp" value="ليس لدي سنين خبرة" id="no_exp">
+                    <p>ليس لدي سنين خبرة</p>
+                </span>
+
+                <span class="student_exp">
+                    <input type="radio" name="student_exp" value="3-1 سنوات" id="3_1exp">
+                    <p>3-1 سنوات</p>
+                </span>
+
+                <span class="student_exp">
+                    <input type="radio" name="student_exp" value="5-3 سنوات" id="3_5exp">
+                    <p>5-3 سنوات</p>
+                </span>
+
+                <span class="student_exp">
+                    <input type="radio" name="student_exp" value="+5 سنوات" id="5exp">
+                    <p>+5 سنوات</p>
+                </span>
+
+
+
+
+
+
+             </span>
+                    
+                </span>
+            
+
+            <span class="prev_next_step">
+                <button id="prev_step3" class="prev_step" onclick="backToStep5()"><img src="../img/right-arrow.png" alt="">السابق</button>
+               
+                    <button id="next_step3" class="next_step" onclick="goToSignUpForm()">التالي<img src="../img/back.png" alt=""></button>
+                
+                
+            </span>
+        </div>
+    </div>
+
+    <div class="sign_up_form" id="sign_up_form">
+        <div class="form_content">
+            <img src="../img/image 1.png" alt="" class="logo">
+            <h1>إنشاء حساب</h1>
+        <p>خطوة أخيرة للدخول الي فريد</p>
+
+        <span class="email_password">
+            <span>
+                <p>البريد الالكتروني :</p>
+                <input type="email" autocomplete="off" id="signup_email" name="signup_email">
+            </span>
+            <span>
+                <p>كلمة المرور :</p>
+                <input type="password" autocomplete="off" id="signup_password" name="signup_password">
+            </span>
+            <button id="signUP_btn" onclick="sendEmail()">إنشاء الحساب</button>
+
+            
+
+        </span>
+
+        <div class="sign_with_media">
+            <span></span>
+            <p>أو التسجيل بواسطة</p>
+            <span></span>
+            
+        </div>
+
+        <div class="media_icon">
+            <span>
+                <img src="../img/apple-logo.png" alt="">
+            </span>
+
+            <span>
+                <img src="../img/facebook (1).png" alt="">
+            </span>
+
+            <span>
+                <img src="../img/search (1).png" alt="">
+            </span>
+
+        </div>
+
+        <p class="signin_link"> هل لديك حساب بالفعل ؟ <a href="">تسجيل الدخول</a></p>
+
+        </div>
+
+        
+        
+    </div>
+
+    <div class="verification_code_form" id="verification_code_form">
+        <div class="verification_code_form_content">
+            <img src="../img/verify.png" alt="">
+            <span class="verification_code">
+                <input type="number" class="otp" id="otp1">
+                <input type="number" class="otp" id="otp2" disabled>
+                <input type="number" class="otp" id="otp3" disabled>
+                <input type="number" class="otp" id="otp4" disabled>
+
+            </span>
+            <button id="verify_otp">Verify</button>
+            <p id="resend" onclick="sendEmail()">Resend</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "lYYQsUaRVxDJWbLzR",
+      });
+   })();
+</script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../sign up/index.js"></script>
+</body>
+</html>

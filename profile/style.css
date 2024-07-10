@@ -1,0 +1,607 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+*{
+    direction: rtl;
+}
+
+nav{
+    width: 100%;
+    /* background-color: blueviolet; */
+    /* padding: 10px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1px solid #D2D5D7;
+}
+
+.header_logo{
+    width: 90px;
+    padding: 10px;
+}
+
+.header_content{
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.main_profile_list{
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search{
+    width: 70%;
+    /* background-color: chartreuse; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.search input{
+    width: 85%;
+    outline: none;
+    border: .1px solid #D2D5D7;
+    padding:14px 40px;
+    border-radius: 25px;
+    
+}
+
+.search button{
+    position: absolute;
+    right: 0px;
+    padding: 9px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.profile_list{
+    display: flex;
+    align-items: center;
+}
+
+.profile_list img{
+    width: 15px;
+}
+
+
+.profile_img{
+    width: 30px !important;
+}
+
+.notification img{
+    width: 25px !important;
+    border: .1px solid #D2D5D7;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.profile_list{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid #D2D5D7;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+#small_main_list {
+    width: 200px;
+    /* height: 300px; */
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: .1px solid #D2D5D7;
+    top: 60px;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 10px;
+    /* height: 0px; */
+    direction: rtl !important;
+    transition: .25s;
+    left: 20px;
+    box-shadow: 0px 0px 2px .5px gray;
+}
+
+#small_main_list li {
+    direction: rtl !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#small_main_list a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+#small_main_list li img {
+    width: 25px;
+    /* height: 25px; */
+    margin: 0px 10px;
+}
+
+#small_main_list li p {
+    font-size: large;
+}
+
+
+
+
+.profile_data{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.student_data_card{
+    width: 20%;
+    border: .1px solid #D2D5D7;
+    margin: 15px;
+    border-radius: 7px;
+    padding: 10px 0;
+    max-height:350px ;
+    box-shadow: 0 0 1px .2px rgba(128, 128, 128, 0.631);
+
+}
+
+
+.student_data_card img{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+.student_data{
+    width: 90%;
+    /* background-color: brown ; */
+    display: block;
+    padding:0 10px;
+    margin: auto;
+    border-top: .1px solid #D2D5D7;
+}
+
+.student_data span{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+}
+
+.student_data span p{
+    font-size: large;
+    color: #4C595F;
+}
+
+.student_data_card h1{
+    text-align: center;
+}
+
+
+.more_student_data{
+    width: 70%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 15px;
+}
+
+
+.education{
+    width: 96%;
+    /* background-color: aquamarine; */
+    /* padding: 10px ; */
+    border: .1px solid #D2D5D7;
+    border-radius: 7px;
+    box-shadow: 0 0 1px .2px rgba(128, 128, 128, 0.631);
+
+}
+
+.education_level{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .education h2{
+    padding: 0px 25px !important;
+}
+
+.education h3{
+    padding: 0px 25px !important;
+} 
+
+
+.education_level span{
+    display: flex;
+    align-items: center;
+    /* background-color: #4C595F; */
+    width: 25%;
+    padding: 10px 20px;
+    justify-content: space-around;
+    border-radius: 5px;
+    font-size: large;
+    border: .1px solid #D2D5D7;
+}
+
+
+.education_level span input{
+    width: 15px;
+    height: 15px;
+
+}
+
+
+.edu_date{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.edu_date span{
+    width: 45%;
+}
+
+.edu_date span p{
+    /* font-weight: bold; */
+    font-size: large;
+    padding: 0px;
+    margin: 0;
+}
+
+.edu_date input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: .1px solid #D2D5D7;
+}
+
+
+.password_settings{
+    width: 95%;
+    /* height: 20vh; */
+    /* background-color: blueviolet; */
+    margin-top:20px ;
+    padding: 5px;
+    border: .1px solid #D2D5D7;
+    border-radius: 7px;
+    box-shadow: 0 0 1px .2px rgba(128, 128, 128, 0.631);
+    
+}
+
+
+.new_password{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+
+.new_password span{
+width: 30%;
+font-weight: bold;
+}
+
+.new_password span input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: .1px solid #D2D5D7;
+    }
+
+    .password_settings h2{
+        padding: 0px 25px !important;
+    }
+    
+
+    .delete_account{
+        width: 90%;
+        padding: 5px 35px;
+        /* height: 20vh; */
+        margin-top: 20px;
+        border-radius: 7px;
+        border: .1px solid #D2D5D7;
+        box-shadow: 0 0 1px .2px rgba(128, 128, 128, 0.631);
+    }
+
+    /* .delete_account h2{
+        padding: 0px 20px;
+    }
+
+    .delete_account p{
+        padding: 0px 20px;
+    } */
+
+    .delete_account button{
+        padding: 8px, 16px, 8px, 16px;
+        border: none;
+        border-radius: 100px;
+        gap: 10px;
+        width:111px ;
+        height: 40px ;
+        font-size: large;
+        background-color: #0778B5;
+        cursor: pointer;
+        color: white;
+    }
+
+    .popup_delete_account_continer{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* background-color: red; */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+
+    .popup_delete_account_closer{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.375);
+        cursor: pointer;
+    }
+
+    .popup_delete_account{
+        width: 30%;
+        background-color: white;
+        display: block;
+        font-size: larger;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .delete_account_Btn{
+        /* width: 25%; */
+        /* background-color: red; */
+        float: left;
+    }
+
+    .delete_account_Btn button{
+        border-radius: 100px;
+        height: 40px;
+        width: 77px;
+        border: none;
+        gap: 10px;
+        padding: 8px, 16px, 8px, 16px;
+        cursor: pointer;
+        /* font-size: large; */
+        background-color: #E9EAEB;
+    }
+
+    #delete{
+        background-color: red;
+        color: white;
+    }
+
+    .close{
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #E9EAEB;
+        cursor: pointer;
+    }
+
+    .close img{
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .goToSignin_signUp{
+        width: 100%;
+        /* height: 50px; */
+        background-color: white;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        display: none;
+    }
+
+    .signin_up_Btn{
+        width: 30%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .goToSignin_signUp img{
+        padding: 0px 20px;
+    }
+
+    .signin_up_Btn button{
+        padding: 10px 40px;
+        border-radius: 100px;
+        border: none;
+        font-size: large;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0px 5px;
+        display: block;
+    }
+
+    .signin{
+        border: .1px solid #0778B5 !important;
+        color: #0778B5;
+        background-color: white;
+    }
+
+    .signup{
+        /* border: .1px solid #0778B5; */
+        color: white;
+        background-color: #0778B5;
+    }
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+    .nav_signInUp_list_div{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: blueviolet; */
+        padding: 5px;
+        border: .1px solid #D2D5D7;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    
+
+    .nav_signInUp_list_div img{
+        width: 20px;
+        padding: 0;
+    }
+    
+
+    .Navprofile_img{
+        width: 30px !important;
+        /* padding: 0; */
+
+    }
+
+
+
+    @media (max-width: 1270px){
+        .profile_data{
+            flex-wrap: wrap;
+        }
+
+        .student_data_card{
+            width: 90%;
+        }
+
+        .more_student_data{
+            width: 90%;
+        }
+
+        .education{
+            width: 100%;
+        }
+
+        .password_settings{
+            width: 100%;
+        }
+
+        .delete_account{
+            width: 97%;
+            padding: 20px;
+        }
+    }
+
+
+    @media (max-width: 895px){
+        .education_level span{
+            font-size: medium;
+        }
+
+        .password_settings {
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        .delete_account {
+            width: 80%;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .search{
+            display: none;
+        }
+
+        .main_profile_list{
+            width: 55%;
+        }
+    }
+
+
+    @media (max-width: 665px){
+        .education_level{
+            flex-wrap: wrap;
+        }
+
+        .education_level span{
+            width: 40%;
+            margin: 10px 0;
+        }
+    }
+
+
+    @media (max-width: 550px){
+        .education_level span{
+            width: 85%;
+            justify-content: start;
+        }
+
+        .new_password{
+            flex-wrap: wrap;
+        }
+
+        .new_password span{
+            width: 90%;
+        }
+
+        .education_level {
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+        }
+
+        .main_profile_list {
+            width: 85%;
+        }
+    }
+
+
+    @media (max-width: 400px){
+        .edu_date{
+            flex-wrap: wrap;
+        }
+
+        .edu_date span {
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
