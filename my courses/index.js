@@ -358,7 +358,7 @@ const videos = [
       id: 10,
       videoId: 1013,
       title: "Surah Al-Mu'minun - The Believers",
-      videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+      videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
   },
   {
       id: 2,
@@ -422,7 +422,7 @@ const videos = [
 
     videoId: 1022,
     title: "Surah Al-Mu'minun - The Believers",
-    videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+    videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
 },
 {
     id: 3,
@@ -503,7 +503,7 @@ const videos = [
 
     videoId: 1032,
     title: "Surah Al-Mu'minun - The Believers",
-    videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+    videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
 },
 {
     id: 4,
@@ -567,7 +567,7 @@ const videos = [
 
     videoId: 1040,
     title: "Surah Al-Mu'minun - The Believers",
-    videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+    videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
 },
 {
     id: 5,
@@ -634,7 +634,7 @@ const videos = [
 
     videoId: 1048,
     title: "Surah Al-Mu'minun - The Believers",
-    videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+    videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
 },
 {
     id: 6,
@@ -701,7 +701,7 @@ const videos = [
 
     videoId: 1056,
     title: "Surah Al-Mu'minun - The Believers",
-    videoUrl: "https://youtu.be/vX-6WAwJZYY?si=sqMuMhRNgzXzXQNV"
+    videoUrl: "https://www.youtube.com/embed/Hu1PprY5lhU?si=H9oJON8Zbzly_Q7S"
 },
 {
     id: 7,
